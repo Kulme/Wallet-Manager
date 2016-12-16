@@ -14,10 +14,6 @@
 	
 	$wallet_info = $bitcoin->getwalletinfo();
 	
-	$list_mempool = $bitcoin->getrawmempool();
-	
-	$mempool_info = $bitcoin->getmempoolinfo();
-	
 	$blockchain_info = $bitcoin->getblockchaininfo();
 	
 	$btc_amount = $wallet_info['balance'];

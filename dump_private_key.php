@@ -30,9 +30,6 @@
               <a class="nav-link" href="./transaction_list.php">Transactions List</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./memory_pool.php">Memory Pool</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="./send_coins.php">Send Coins</a>
             </li>
             <li class="nav-item">

@@ -9,7 +9,7 @@ $config = array(
   'rpc_ssl'                   => false,
   'rpc_ssl_ca'                => null,
   
-  // Site info
+  // Site info. I only use this for Bitcoin Wallet anyway
   'site_title'                => 'My Wallet Manager',
   'site_name'                 => 'My Wallet',
   'coin_name'                 => 'Bitcoin',
