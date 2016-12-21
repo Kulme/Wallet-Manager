@@ -15,6 +15,9 @@ $config = array(
   'coin_name'                 => 'Bitcoin',
   'coin_symbol'               => 'BTC',
   
+  // Set timezone in PHP format. Match time with your timezone in transaction list page. Reference http://php.net/manual/en/timezones.php
+  'time_zone'               => 'America/Los_Angeles',
+  
   // Link to Github author on footer
   'show_github'               => true,
 

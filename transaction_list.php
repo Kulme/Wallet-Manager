@@ -55,23 +55,23 @@
 	<table class="table table-bordered table-condensed table-hover">
 		<thead>
 			<tr>
-				<th class="col-xs-1">Time</th>
+				<th class="col-xs-2">Time</th>
 				<th class="col-xs-1">Type</th>
 				<th class="col-xs-3">Address</th>
 				<th class="col-xs-1">Amount</th>
 				<th class="col-xs-1">Confirmations</th>
-				<th class="col-xs-5">Transaction ID</th>
+				<th class="col-xs-4">Transaction ID</th>
 			</tr>
 		</thead>
 	<tbody>
 		<?php foreach($transaction_list as $list) {?>
 		<tr>
-		<td class="col-xs-1"><?php $times = $list['time']; echo date('d/m/Y', $times); ?></td>
+		<td class="col-xs-2"><?php date_default_timezone_set($config[time_zone]); $times = $list['time']; echo date('d M Y H:i:s', $times); ?></td>
 		<td class="col-xs-1"><?php echo $list['category']; ?></td>
 		<td class="col-xs-3"><?php echo $list['address']; ?></td>
 		<td class="col-xs-1"><?php echo $list['amount']; ?></td>
 		<td class="col-xs-1"><?php echo $list['confirmations']; ?></td>
-		<td class="col-xs-5"><a href="https://blockchain.info/tx/<?php echo $list['txid']; ?>" target="_blank"><?php echo $list['txid']; ?></a></td>
+		<td class="col-xs-4"><a href="https://blockchain.info/tx/<?php echo $list['txid']; ?>" target="_blank"><?php echo $list['txid']; ?></a></td>
 		</tr>
 		<?php } ?>
 	</tbody>
