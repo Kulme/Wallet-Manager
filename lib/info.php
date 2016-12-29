@@ -19,7 +19,9 @@
 	$blockchain_info = $bitcoin->getblockchaininfo();
 	
 	$byte_recv_sent_info = $bitcoin->getnettotals();
-
+	
+	$estimate_fee = $bitcoin->estimatefee(2);
+	
 	function convert_byte($size){
 		$base = log($size) / log(1024);
 		$suffix = array("Bytes", "KB", "MB", "GB", "TB");

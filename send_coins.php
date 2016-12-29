@@ -50,7 +50,7 @@
 		<h1 class="display-1">Send Coins</h1>
 		<p class="borderspace"></p>
 		<p class="lead"><strong>Send coins to <?php echo $config['coin_name']; ?> address</strong></p>
-		<p class="lead"><strong>Available balance <?php echo $wallet_info['balance']; ?> <?php echo $config['coin_symbol']; ?><?php if ($config['show_fiat'] === true) { $bitcoin_fiat = file_get_contents($price_url); echo " | ". $bitcoin_fiat; } ?></strong></p>
+		<p class="lead"><strong>Available balance: <?php echo $wallet_info['balance']; ?> <?php echo $config['coin_symbol']; ?><?php if ($config['show_fiat'] === true) { $bitcoin_fiat = file_get_contents($price_url); echo " | ". $bitcoin_fiat; } ?><br>Estimate fee: <?php echo $estimate_fee; ?> <?php echo $config['coin_symbol']; ?></strong></p>
 	<form>
 		<div class="form-group">
 			<p class="lead"><input id="coin_address" type="text" placeholder="<?php echo $config['coin_name']; ?> Address Destination" class="form-control"></p>
