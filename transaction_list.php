@@ -66,7 +66,7 @@
 	<tbody>
 		<?php foreach($transaction_list as $list) {?>
 		<tr>
-		<td class="col-xs-2"><?php date_default_timezone_set($config[time_zone]); $times = $list['time']; echo date('d M Y H:i:s', $times); ?></td>
+		<td class="col-xs-2"><?php date_default_timezone_set($config['time_zone']); $times = $list['time']; echo date('d M Y H:i:s', $times); ?></td>
 		<td class="col-xs-1"><?php echo $list['category']; ?></td>
 		<td class="col-xs-3"><?php echo $list['address']; ?></td>
 		<td class="col-xs-1"><?php echo $list['amount']; ?></td>
